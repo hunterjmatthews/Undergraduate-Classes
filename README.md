@@ -1,1 +1,1 @@
-# Undergraduate-Classes
+# Undergraduate Classes
