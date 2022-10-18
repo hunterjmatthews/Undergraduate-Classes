@@ -4,9 +4,9 @@
 | Course Code | Course Title | Link | Languages |
 | ----------- | ------------ | ---- | -------- |
 | CS 1337 | Computer Science 1 | [CS 1337]() | <kbd>[C++]() |
-| CS 2336 | Computer Science 2 | [CS 2336]() | <kbd>[Java]() |
-| CS 2305 | Discrete Mathematics for Computing 1 | N/A | N/A |
-| CS 3305 | Discrete Mathematics for Computing 2 | N/A | N/A | 
+| CS 2336 | Computer Science 2 | [CS 2336](https://github.com/hunterjmatthews/Undergraduate-Classes/tree/main/Computer%20Science%202) | <kbd>[Java]() |
+| CS 2305 | Discrete Mathematics for Computing 1 | N/A | <kbd>[LaTeX]() |
+| CS 3305 | Discrete Mathematics for Computing 2 | N/A | <kbd>[LaTeX]() | 
 | CS 4384 | Automata Theory | [CS 4384]() | <kbd>[LaTeX]() |
 
 ## Bachelor of Science in Mathematics with Mathematics Specialization
