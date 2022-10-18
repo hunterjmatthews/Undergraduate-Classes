@@ -1,3 +1,12 @@
+/*
+    Assignment: Assignment #1
+    Author:     Hunter Matthews
+    NetID:      hjm210004
+    Course:     CS 2336.503 (Computer Science II)
+    Instructor: Dr. Mohamed Belkoura
+    Date Due:   September 14th, 2022 at 11:59pm.
+*/
+
 import java.util.*;
 
 public class Account {
