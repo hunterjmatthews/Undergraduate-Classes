@@ -6,7 +6,7 @@ Divisibility of integers, prime numbers, the Euclidean algorithm, greatest commo
 | Chapter | Date | Documents |
 | ------- | ---- | --------- |
 
-## Problem Set:
+## Problem Sets:
 | Problem Set | Date | Documents | Exercise Code |
 | -------- | ---- | ---------- | ----- |
 | Problem Set #1 | 09/02/22 | [TeX][PDF] | <kbd>[C/C++]()</kbd> |
