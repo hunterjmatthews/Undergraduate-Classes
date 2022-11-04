@@ -1,0 +1,9 @@
+-- |
+-- Module      : Main
+-- Copyright   : Hunter Matthews
+-- License     : BSD3
+-- 
+-- Maintainer  : Hunter Matthews
+-- Stability   : experimental
+-- Portability : portable
+-- 
