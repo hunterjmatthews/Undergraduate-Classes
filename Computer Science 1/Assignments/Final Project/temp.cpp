@@ -23,6 +23,14 @@ void eventRules();
 void eventPrizes();
 void tournamentMenu(vector<string> &teamOne, vector<string> &teamTwo, vector<string> &teamThree, vector<string> &teamFour);
 vector<string> generateBrackets(vector<string> tempTeam1, vector<string> tempString2);
+void printBracket(vector<string> printVector);
+
+void printBracket(vector<string> printVector){
+  //vector<int> v;
+  for (int i=0; i< printVector.size();i++) {
+    cout << printVector[i] << endl;
+  }
+}
 
 vector<string> generateBrackets(vector<string> tempTeam1, vector<string> tempTeam2, int i) {
     vector<string> bracket;
@@ -66,10 +74,18 @@ void tournamentMenu(vector<string> &teamOne, vector<string> &teamTwo, vector<str
     }
     
     if(menuOptions == 3) {
-        cout << bracket1.size() << endl;
-        cout << bracket2.size() << endl;
-        cout << bracket3.size() << endl;
-        cout << bracket4.size() << endl;
+        cout << "Bracket 1\n";
+        printBracket(bracket1);
+        cout << "\n";
+        cout << "Bracket 2\n";
+        printBracket(bracket2);
+        cout << "\n";
+        cout << "Bracket 3\n";
+        printBracket(bracket3);
+        cout << "\n";
+        cout << "Bracket 4\n";
+        printBracket(bracket4);
+        cout << "\n";
     }
 }
 
@@ -174,7 +190,6 @@ void userMenu() {
 	    
 	    if(menuOptions == 1) {
 	        teamOne = teamNames(teamOne, 1);
-	        cout << teamOne.size();
             teamTwo = teamNames(teamTwo, 2);
             teamThree = teamNames(teamThree, 3);
             teamFour = teamNames(teamFour, 4);
@@ -192,11 +207,15 @@ void userMenu() {
 	        eventPrizes();
 	   }
 	   if(menuOptions == 5) {
-	        while(pin != 1124) {
 	        cout << "You must be a tournament admin to enter. Please enter the pin.\n";
 	        cin >> pin;
-	        tournamentMenu(teamOne,teamTwo,teamThree,teamFour);
+	        if(pin == 1224)
+	            tournamentMenu(teamOne,teamTwo,teamThree,teamFour);
+	        else {
+	            cout << "Error. Try again\n";
+	            system("clear");
 	        }
+	            
 	   }
 	   if(menuOptions == 6) {
 	        // End da program.
