@@ -9,24 +9,68 @@
 
 #include <iostream>
 #include <iomanip>
+#include <string>
+#include <vector>
 
 using namespace std;
 
 // Function Prototypes:
 void userMenu();
-void teamNames();
+vector<string> teamNames(vector<string> team, int teamNumber);
 void returnToMenu();
 void studentEventGuidelines();
 void eventRules();
 void eventPrizes();
-void tournamentRandomizer();
+void tournamentMenu(vector<string> &teamOne, vector<string> &teamTwo, vector<string> &teamThree, vector<string> &teamFour);
+vector<string> generateBrackets(vector<string> tempTeam1, vector<string> tempString2);
 
-int tournamentRandomizer(string teamOne, string teamTwo, string teamThree, string teamFour) {
-	int randomize = 0;
-	cout << "Please Enter in the Letter R to randomize teams: ";
-	cin >> randomize;
-	// Replace will actual replacment.
-	return randomize;
+vector<string> generateBrackets(vector<string> tempTeam1, vector<string> tempTeam2, int i) {
+    vector<string> bracket;
+    
+    if(i == 1) {
+        for(int j = 0; j <= i; j++) {
+            bracket.push_back(tempTeam1.at(j));
+            bracket.push_back(tempTeam2.at(j));
+        }
+    }
+    if(i == 3) {
+        for(int j = 2; j <= i; j++) {
+            bracket.push_back(tempTeam1.at(j));
+            bracket.push_back(tempTeam2.at(j));
+        }
+    }
+    return bracket;
+}
+
+void tournamentMenu(vector<string> &teamOne, vector<string> &teamTwo, vector<string> &teamThree, vector<string> &teamFour) {
+    // Dclarations:
+    int eventRound = 0, menuOptions = 0;
+    vector<string> bracket1, bracket2, bracket3, bracket4;
+    
+    // Display Round # and # of players
+    cout << "Current Round: " << eventRound << endl;
+    cout << "Number of Players: " << (teamOne.size() + teamTwo.size() + teamThree.size() + teamFour.size()) << endl;
+    
+    // Tournament Menu
+    cout << "_________" << "Tournament Menu" << "_________\n";
+    cout << "Enter 2 for inputing winners. Enter 3 for displaying brackets.\n";
+    cin >> menuOptions;
+    
+    // Generate Brackets
+    bracket1 = generateBrackets(teamOne, teamThree, 1);
+    bracket2 = generateBrackets(teamOne, teamThree, 3);
+    bracket3 = generateBrackets(teamTwo, teamFour, 1);
+    bracket4 = generateBrackets(teamTwo, teamFour, 3);
+    
+    if(menuOptions == 2) {
+    }
+    
+    if(menuOptions == 3) {
+        cout << bracket1.size() << endl;
+        cout << bracket2.size() << endl;
+        cout << bracket3.size() << endl;
+        cout << bracket4.size() << endl;
+    }
 }
 
 void eventPrizes() {
@@ -83,84 +127,85 @@ void returnToMenu() {
 	if (returnMenu == 'Y' || returnMenu == 'y') {
 	    // Make the formating pretty:
 	    cout << "\n";
+	    // Clean the console.
+	    system("clear");
 	    // Sends the user back to the menu.
 	    userMenu();
 	}
 }
 
-void teamNames() {
+vector<string> teamNames(vector<string> team, int teamNumber) {
     // Declarations:
-    int index = 0;
-    string teamOne = "", teamTwo = "", teamThree = "", teamFour = "";
+    int index = 0; 
+    string strTeam = "";
+    bool end = 1;
 	
 	// Explaining how this works.
-	cout << "Hosted by the International Game Developers Association (IGDA)\n";
-    cout << "_________________________________________________\n";
 	cout << "Please Enter in The Names of All Four Teams Below (at least 5 characters long, only letters can be used; no numbers, special characters, spaces, or symbols): \n";
-	if(index < 5) {
-	    // Team 1:
-	    index += 1;
-	    cout << "Please Enter in Team 1: ";
-		cin >> teamOne;
-		
-		// Team 2:
-		index += 1;
-		cout << "Please Enter in Team 2: ";
-		cin >> teamTwo;
-		
-		// Team 3:
-		index += 1;
-		cout << "Please Enter in Team 3: ";
-		cin >> teamThree;
-		
-		// Team 4:
-		index += 1;
-		cout << "Please Enter in Team 4: " ;
-		cin >> teamFour;
-	}
-	// Function call 'tournamentRandomizer' that randomies the teams for bracket creation.
-	tournamentRandomizer(teamOne, teamTwo, teamThree, teamFour);
+	// Enter Team:
+	cout << "Please enter in the players for Team " << teamNumber << "\n";
+	do {
+	    cin >> strTeam;
+		team.push_back(strTeam);
+	} while(team.size() < 4);
 	
-	// Ask user if they would like to return to menu.
-	returnToMenu();
+	// Clean the console.
+	system("clear");
+	
+	// Return vector<string> of team
+	return team;
 }
 
 void userMenu() {
     // Declarations
-    int menuOptions = 0;
+    vector<string> teamOne, teamTwo, teamThree, teamFour;
+    int menuOptions = 0, pin = 0;
     
-    // Main Menu:
-	cout << "Menu Options (Please Enter 1-6)\n";
-	cout << "1. Enter Team Names \n";
-	cout << "2. Student Guidelines & Event Details\n";
-	cout << "3. In-Game Rules\n";
-	cout << "4. Tournament Prizes\n";
-	cout << "5. Quit\n";
-	cin >> menuOptions;
-	
-	if(menuOptions == 1) {
-        // Function call to 'teamNames' that ask the user to enter team names.
-		teamNames();
-	}
-	if(menuOptions == 2) {
-	    // Function call to 'studentEventGuidelines' that tells the user about the event details.
-	    studentEventGuidelines();
-	}
-	if(menuOptions == 3) {
-	   // Function call to 'eventRules' that tells the user about the rules of the event.
-	   eventRules();
-	}
-	if(menuOptions == 4) {
-	  // Function call to 'eventPrizes' that tells the user about the possible event prizes.
-	  eventPrizes();
-	}
-	if(menuOptions == 5) {
-	    // End da program.
-	    cout << "Exiting Program...\n";
-	    cout << "***Remember to read our event guidelines and student handbook references before competing in the tournament***\n";
-	    cout << "***Dont forget to ask an IGDA Professor Club Sponser or Club Officer if you have any further questions***\n";
-	    cout << "Goodluck  and we hope you enjoy the Smash Bros Ultimate 2v2 Tournament hosted by IGDA\n";
-	}
+    while(menuOptions != 6) {
+        // Main Menu:
+	    cout << "Menu Options (Please Enter 1-6)\n";
+	    cout << "1. Enter Players\n";
+	    cout << "2. Student Guidelines & Event Details\n";
+	    cout << "3. In-Game Rules\n";
+	    cout << "4. Tournament Prizes\n";
+	    cout << "5. Tournament Menu\n";
+	    cout << "6. Quit\n";
+	    cin >> menuOptions;
+	    
+	    if(menuOptions == 1) {
+	        teamOne = teamNames(teamOne, 1);
+	        cout << teamOne.size();
+            teamTwo = teamNames(teamTwo, 2);
+            teamThree = teamNames(teamThree, 3);
+            teamFour = teamNames(teamFour, 4);
+	    }
+	    if(menuOptions == 2) {
+	        // Function call to 'studentEventGuidelines' that tells the user about the event details.
+	        studentEventGuidelines();
+	    }
+	    if(menuOptions == 3) {
+	        // Function call to 'eventRules' that tells the user about the rules of the event.
+	        eventRules();
+	    }
+	    if(menuOptions == 4) {
+	        // Function call to 'eventPrizes' that tells the user about the possible event prizes.
+	        eventPrizes();
+	   }
+	   if(menuOptions == 5) {
+	        while(pin != 1124) {
+	        cout << "You must be a tournament admin to enter. Please enter the pin.\n";
+	        cin >> pin;
+	        tournamentMenu(teamOne,teamTwo,teamThree,teamFour);
+	        }
+	   }
+	   if(menuOptions == 6) {
+	        // End da program.
+	        cout << "Exiting Program...\n";
+	        cout << "***Remember to read our event guidelines and student handbook references before competing in the tournament***\n";
+	        cout << "***Dont forget to ask an IGDA Professor Club Sponser or Club Officer if you have any further questions***\n";
+	        cout << "Goodluck  and we hope you enjoy the Smash Bros Ultimate 2v2 Tournament hosted by IGDA\n";
+	    }
+    }
 }
 
 int main()
