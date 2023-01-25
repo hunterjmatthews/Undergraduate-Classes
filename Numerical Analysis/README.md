@@ -7,9 +7,9 @@ Solution of linear equations, roots of polynomial equations, interpolation and a
 | ------- | ---- | --------- |
 
 ## Problem Sets:
-| Problem Set | Date | Documents |
-| -------- | ---- | ---------- |
-| Problem Set #1 | N/A | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> |
+| Problem Set | Date | Documents | Exercise Code | 
+| -------- | ---- | ---------- | ---------------- |
+| Problem Set #1 | N/A | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> | <kbd>[Matlab]()</kbd>
 
 ## Exams:
 | Exam | Date | Documents |
