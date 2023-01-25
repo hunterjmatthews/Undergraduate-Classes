@@ -8,8 +8,8 @@ This course is intended as a second course in abstract algebra for undergraduate
 
 ## Problem Sets:
 | Problem Set | Date | Documents |
-| -------- | ---- | ---------- | ----- |
-| Problem Set #1 | N/A | [LaTeX][PDF] |
+| -------- | ---- | ---------- |
+| Problem Set #1 | N/A | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> |
 
 ## Exams:
 | Exam | Date | Documents |
