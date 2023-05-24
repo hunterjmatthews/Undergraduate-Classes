@@ -9,6 +9,7 @@
 | CS 3305 | Discrete Mathematics for Computing 2 | N/A | <kbd>[LaTeX]()</kbd> | 
 | CS 4384 | Automata Theory | [CS 4384]() | <kbd>[LaTeX]()</kbd> |
 | CS 3377 | Systems Programming in UNIX and Other Environments | [CS 3377]() | <kbd>[C++]()</kbd> |
+| CS 3341 | Probability & Statistics in Computer Science | [CS 3341]() | <kbd>[LaTeX]()</kbd> |
 
 ## Bachelor of Science in Mathematics with Mathematics Specialization
 | Course Code | Course Title | Link | Languages |
@@ -25,3 +26,6 @@
 | Math 3312 | Abstract Algebra 2 | [Math 3312]() | <kbd>[LaTeX]()</kbd> |
 | Math 3379 | Complex Variables | [Math 3312]() | <kbd>[LaTeX]()</kbd> |
 | Math 4334 | Numerical Analysis | [Math 4334]() | <kbd>[LaTeX]()</kbd> |
+| Math 4301 | Mathematical Analysis 1 | [Math 4301]() | <kbd>[LaTeX]()</kbd> |
+| Math 4302 | Mathematical Analysis 2 | [Math 4302]() | <kbd>[LaTeX]()</kbd> |
+| Math 4341 | Topology | [Math 4341]() | <kbd>[LaTeX]()</kbd> |
