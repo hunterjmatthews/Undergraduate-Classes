@@ -26,6 +26,6 @@
 | Math 3312 | Abstract Algebra 2 | [Math 3312]() | <kbd>[LaTeX]()</kbd> |
 | Math 3379 | Complex Variables | [Math 3312]() | <kbd>[LaTeX]()</kbd> |
 | Math 4334 | Numerical Analysis | [Math 4334]() | <kbd>[LaTeX]()</kbd> |
-| Math 4301 | Mathematical Analysis 1 | [Math 4301]() | <kbd>[LaTeX]()</kbd> |
+| Math 4301 | Mathematical Analysis 1 | [Math 4301](https://github.com/hunterjmatthews/Undergraduate-Classes/tree/main/Mathematical%20Analysis%20I) | <kbd>[LaTeX]()</kbd> |
 | Math 4302 | Mathematical Analysis 2 | [Math 4302]() | <kbd>[LaTeX]()</kbd> |
 | Math 4341 | Topology | [Math 4341]() | <kbd>[LaTeX]()</kbd> |
