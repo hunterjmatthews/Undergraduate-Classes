@@ -14,7 +14,7 @@ Sets, real number system, metric spaces, real functions of several variables, Ri
 ## Quizzes:
 | Quiz | Date | Documents |
 | ---- | ---- | --------- |
-| Quiz #1 | 05/25/23 | <kbd>[LaTeX]()</kbd> |
+| Quiz #1 | 05/25/23 | <kbd>[LaTeX](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Mathematical%20Analysis%20I/Quizzes/Quiz%201/Quiz%201.tex)</kbd> <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Mathematical%20Analysis%20I/Quizzes/Quiz%201/Quiz_1.pdf)</kbd> |
 
 ## Exams:
 | Exam | Date | Documents |
