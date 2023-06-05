@@ -1,1 +1,88 @@
+\documentclass{report}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{decorations, decorations.markings} 
+\tikzset{corner/.style={
+  postaction={decorate},
+  decoration={markings,mark=between positions 0 and 1 step 0.2 with {\fill (0,0) circle (2pt);}}
+  }
+}
 
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{CS 3341}\\Homework 2}
+\author{\huge{Hunter Matthews}}
+\date{06/07/23}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+% -- Question #Ex 2.4 on page 33. (e) and (f). Change the word “if” to “given”. -- 
+\qs{}{Among employees of a certain firm, 70\% know C/C++, 60\% know Fortran, and 50\% know both languages. What portion of programmers...\\
+(e) Given someone knows Fortran, what is the probability that he/she knows C/C++ too?\\
+(f) Given someone knows C/C++, what is the probability that he/she knows Fortran too?}
+\pf{Solution}{\textbf{(e)} $\cfrac{0.50}{0.60} = 0.8\Bar{3}\to \cfrac{5}{6}$ probability that if he/she knows Fortran, then there is a $\cfrac{5}{6}$ chance that he/she knows C/C++ too.\\
+\\\textbf{(f)} $\cfrac{0.50}{0.70} = 0.714...\to \cfrac{5}{7}$  probability that if he/she knows C/C++, then there is a $\cfrac{5}{7}$ chance that he/she knows Fortran too.}
+\newpage
+% -- Question #2.8 --
+\qs{}{A shuttle’s launch depends on three key devices that may fail independently of each other with probabilities 0.01, 0.02, and 0.02, respectively. If any of the key devices fails, the launch will be postponed. Compute the probability for the shuttle to be launched on time, according to its schedule.}
+\pf{Solution}{The probability that the shuttle will be launched on time is $1-(0.01 + 0.02 + 0.02) = 0.95$}
+\newpage
+% -- Question #2.9 --
+\qs{}{Successful implementation of a new system is based on three independent modules. Module 1 works properly with probability 0.96. For modules 2 and 3, these probabilities equal 0.95 and 0.90. Compute the probability that at least one of these three modules fails to work properly.}
+\pf{Solution}{The probability that at least one of these three modules fails to work properly is found by the following
+$$1 - (0.96\cdot 0.95\cdot 0.90) = 1 - 0.8208 = 0.1792\to 17.92\%$$
+}
+\newpage
+% -- Question #2.11 --
+\qs{}{A computer program is tested by 5 independent tests. If there is an error, these tests will discover it with probabilities 0.1, 0.2, 0.3, 0.4, and 0.5, respectively. Suppose that the program contains an error. What is the probability that it will be found.\\
+(a) by at least one test?\\
+(b) by at least two tests?\\
+(c) by all five tests?}
+\pf{Solution}{\textbf{(a)} The probability that it will be found by at least one test is $1-(0.9\cdot 0.8\cdot 0.7\cdot 0.6\cdot 0.5) = 0.8488\to 84.88\%$\\
+\textbf{(b)} The probability that it will be found by at least two test is found by the following
+\begin{equation*}
+\begin{split}
+1 - (0.9\cdot 0.8\cdot 0.7\cdot 0.6\cdot 0.5) - ((0.1\cdot 0.8\cdot 0.7\cdot 0.6\cdot 0.5) + (0.9\cdot 0.2\cdot 0.7\cdot 0.6\cdot 0.5)\\ + (0.9\cdot 0.8\cdot 0.3\cdot 0.6\cdot 0.5) + (0.9\cdot 0.8\cdot 0.7\cdot 0.4\cdot 0.5) + (0.9\cdot 0.8\cdot 0.7\cdot 0.6\cdot 0.5))\\
+= 1 - (0.1512) - ((0.0168+0.0378+0.0648+0.1008+0.1512)) = 0.4774\to 47.74\%
+\end{split}
+\end{equation*}
+\textbf{(c)} The probability that it will be found by all five tests is $0.1\cdot 0.2\cdot 0.3\cdot 0.4\cdot 0.5 = 0.0012\to 0.12\%$}
+\newpage
+% -- Question #2.13 --
+\qs{}{An important module is tested by three independent teams of inspectors. Each team detects a problem in a defective module with probability 0.8. What is the probability that at least one team of inspectors detects a problem in a defective module?}
+\pf{Solution}{The probability that at least one team of inspectors detects a problem in a defective module is $1 - (0.2\cdot 0.2\cdot 0.2) = 0.992\to 99.2\%$}
+\newpage
+% -- Question #2.14 --
+\qs{}{A spyware is trying to break into a system by guessing its password. It does not give up until it tries 1 million different passwords. What is the probability that it will guess the password and break in if by rules, the password must consist of...\\
+(a) 6 different lower-case letters\\
+(b) 6 different letters, some may be upper-case, and it is case-sensitive.\\
+(c) any 6 letters, upper- or lower-case, and it is case-sensitive.\\
+(d) any 6 characters including letters and digits}
+\pf{Solution}{
+\textbf{(a)} The probability that it will guess the password for 6 different lower-case letters is $$\cfrac{1000000}{(26\cdot 25\cdot 24\cdot 23\cdot 22\cdot 21)}=\cfrac{1000000}{165765600} = 0.006033$$
+\textbf{(b)} The probability that it will guess the password for 6 different letters is $$\cfrac{1000000}{(52\cdot 51\cdot 50\cdot 49\cdot 48\cdot 47)} = \cfrac{1000000}{14658134400} = 0.0000682215$$
+\textbf{(c)} The probability that it will guess the password for any 6 letters, upper or lower-case, and it is case-sensitive is $$\cfrac{1000000}{52^{6}} = \cfrac{1000000}{19770609664} = 0.00005058012$$
+\textbf{(d)} The probability that it will guess the password for any 6 characters including letters and digits is $$\cfrac{1000000}{(52+10)^{6}} = \cfrac{1000000}{62^6} = \cfrac{1000000}{56800235584} = 0.00001760556$$}
+\newpage
+% -- Question #2.15 --
+\qs{}{A computer program consists of two blocks written independently by two different programmers. The first block has an error with probability 0.2. The second block has an error with probability 0.3. If the program returns an error, what is the probability that there is an error in both blocks?}
+\pf{Solution}{The probability that there is an error in both blocks is $0.2\cdot 0.3 = 0.06$}
+\newpage
+% -- Question #8 --
+\qs{}{One ticket will be drawn at random from the box below. Let $A = $\{Green\} and $B = \{8\}$. Are A and B independent? (Use definition to prove independence or dependence)}
+\pf{Solution}{Yes, A and B are both independent events because the probability of occurrence of an event A is not affected by the occurrence of another event B.}
+\newpage
+% -- Question #9 --
+\qs{}{Four cards will be dealt off the top of a well-shuffled deck. There are two options:\\
+(a) To win \$ 10 if the first card is club and the second is a diamond and the third is a heart and the fourth is a spade. Hint: Use the formula $P(A\cap B\cap C\cap D) = P(A)P(A)P(A\cap B)P(D|A\cap B\cap C)$\\
+\\(b) To win \$ 10 if the four cards are of four different suits.\\
+\\Compute the probability of winning \$ 10 for each case. Which option is better? Hint: How many ways to have four different suits?}
+\pf{Solution}{\textbf{(a)} The probability to win \$10 is $$(\cfrac{13}{52})\cdot (\cfrac{13}{51})\cdot (\cfrac{13}{50})\cdot (\cfrac{13}{49}) = 0.0043957583$$
+\textbf{(b)} The probability to win \$10 is $$\cfrac{52\cdot 39\cdot 26\cdot 13}{52\cdot 51\cdot 50\cdot 49} = \cfrac{2197}{20825} = 0.10549819928$$
+Based on the question alone, one can assume that the second option is better. Our data backs this assumption so the second option is indeed better.}
+\end{document}
