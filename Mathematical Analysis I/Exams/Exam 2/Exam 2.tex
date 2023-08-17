@@ -1,0 +1,76 @@
+\documentclass{report}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{decorations, decorations.markings} 
+\tikzset{corner/.style={
+  postaction={decorate},
+  decoration={markings,mark=between positions 0 and 1 step 0.2 with {\fill (0,0) circle (2pt);}}
+  }
+}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 4301}\\Exam 2}
+\author{\huge{Hunter Matthews}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+% -- Question #1a --
+\qs{}{(10 pts) Let $A = (0,1)\cap \bbQ\cup \{2+\frac{1}{n}:n\in \bbN\}$. Find
+\begin{enumerate}
+    \item (2.5 pts) $A' = $
+    \item (2.5 pts) $\Bar{A} = $
+    \item (2.5 pts) Int($A) = $
+    \item (2.5 pts) $\partial A = $
+\end{enumerate}
+}
+% -- Question 1b --
+\qs{}{Answer the following questions (\textbf{T}/\textbf{F})
+\begin{enumerate}
+    \item (2 pts) \rule{1cm}{0.15mm} $A = \{(-1)^n+\frac{1}{n}:n\in \bbN\}$ is closed.
+    \item (2 pts) \rule{1cm}{0.15mm} $A = \empty$ is connected.
+    \item (2 pts) \rule{1cm}{0.15mm} $\partial(\bbR\backslash\bbQ)=\bbR$.
+    \item (2 pts) \rule{1cm}{0.15mm} Int($\{\frac{1}{n}:n\in\bbN\}) = (0,1)$.
+    \item (2 pts) \rule{1cm}{0.15mm} $A = [1,2)$ is sequentially compact.
+\end{enumerate}}
+\newpage
+% -- Question 2a --
+\qs{}{(6 pts) Complete the following definition\\
+\textbf{Definition} Let $f:A\subseteq \bbR\to\bbR$ and $x_0\in A' (A'$ is the set of accumulation points of $A$). We say that $$\lim_{x\to x_0}f(x)=L$$ if for every $\epsilon > 0$.}
+\pf{Solution}{}
+% -- Question 2b --
+\qs{}{(14 pts) Using $(\epsilon - \delta)$ definition of limit, show that $$\lim_{x\to 1}(2x^2-x+1)=2$$}
+\pf{Proof}{}
+\newpage
+% -- Question 3 --
+\qs{}{Let $f:\bbR\to\bbR$ be given by $$f(x)=\Biggl\{\begin{array}{lll}
+x^2+2 & \text { if } & x > 0 \\
+x+1 & \text { if } & x\leq 0
+\end{array}$$ and $\delta > 0$.\\
+\\i) (8 pts) Find $$\omega_f(D(0,\delta)) = \sup\{|f(x)-f(y)|:x,y\in D(0,\delta)\} =$$ Explain your answer using graph $y=f(x)$\\
+\\ii) (6 pts) Find $$\omega_f(0)=\inf\{\omega_f(D(0,\delta)):\delta > 0\} =$$ Explain briefly your answer.\\
+\\iii) For $x\neq 0$, find $$\omega_f(x)=\inf\{\omega_f(D(x,\delta)):\delta > 0\}$$
+\begin{enumerate}
+    \item (3 pts) If $x < 0$ then $f(x) = \rule{1cm}{0.15mm}$, so $\omega_f(x) = $
+    \item (3 pts) if $x > 0$ then $f(x) = \rule{1cm}{0.15mm}$, so $\omega_f(x) = $
+\end{enumerate}}
+\pf{Solution}{}
+\newpage
+% -- Question 4 --
+\qs{}{(20 pts) Show that $f:(\frac{1}{2},\infty)\to \bbR$ given by $f(x) = \frac{1}{2x-1}$ is not uniformly continuous.}
+\pf{Proof}{}
+\newpage
+% -- Extra Credit --
+% -- Question 5a --
+\qs{}{(10 pts) (Extra Credit) Show that if $A$ is compact and $A\neq 0$ then there are $x_0,y_0\in A$ such that $$x_0=\inf A\text{ and }y_0=\sup A$$}
+\pf{Proof}{}
+% -- Question 5b --
+\qs{}{(10 pts) (Extra Credit) Let $f,g:A\subseteq \bbR\to \bbR$ and assume that there is $M\geq 0$, such that, for all $x\in A$, $$|f(x)|\leq M\text{ and }|g(x)|\leq M$$ Show that if both $f$ and $g$ are uniformly continuous on $A$, then the function $h:A\to \bbR$, given by $h(x)=f(x)g(x)$ is also uniformly continuous on A.}
+\pf{Proof}{}
+\end{document}
