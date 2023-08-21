@@ -2,6 +2,11 @@
 ## Course Description: 
 Elements of general topology, topological spaces, continuous functions, connectedness, compactness, completeness, separation axioms, and metric spaces.
 
+## Textbooks Used:
+1. Topology (2nd edition) by James Munkres
+2. Counterexamples in Topology by Lynn Arthur Steen and J. Arthur Seebach, Jr.
+3. Elementary Topology by O. Viro, O. Ivanov, N. Netsvetaev, V. Kharlamov
+
 ## Notes:
 | Lecture | Topic | Documents |
 | ------- | ----- | --------- |
