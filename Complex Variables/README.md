@@ -2,6 +2,9 @@
 ## Course Description: 
 Geometry and algebra of complex numbers, functions of a complex variable, power series, integration, calculus of residues, conformal mapping.
 
+## Textbook Used:
+1. Complex Variables and Applications 9th edition by James Ward Brown and Ruel Vance Churchill
+
 ## Notes:
 | Lecture | Date | Documents |
 | ------- | ---- | --------- |
