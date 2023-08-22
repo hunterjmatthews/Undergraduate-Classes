@@ -5,6 +5,7 @@ Analysis of algorithms including time complexity and Big-O notation. Analysis of
 ## Notes:
 | Lecture | Topic | Documents |
 | ------- | ----- | --------- |
+| Lecture #1 | Mathematical Background and Algorithm Analysis | <kbd>[PDF]()</kbd> |
 
 ## Homework:
 | Problem Set | Date | Documents |
