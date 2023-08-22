@@ -11,6 +11,10 @@ Analysis of algorithms including time complexity and Big-O notation. Analysis of
 | Problem Set | Date | Documents |
 | -------- | ---- | ---------- |
 
+## Projects:
+| Project | Date | Documents |
+| -------- | ---- | ---------- |
+
 ## Exams:
 | Exam | Date | Documents |
 | ---- | ---- | --------- |
