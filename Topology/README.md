@@ -15,6 +15,7 @@ Elements of general topology, topological spaces, continuous functions, connecte
 ## Problem Sets:
 | Problem Set | Date | Documents |
 | -------- | ---- | ---------- |
+| Problem Set #1 | 08/30/23 | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> |
 
 ## Exams:
 | Exam | Date | Documents |
