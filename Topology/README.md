@@ -10,7 +10,8 @@ Elements of general topology, topological spaces, continuous functions, connecte
 ## Notes:
 | Lecture | Topic | Documents |
 | ------- | ----- | --------- |
-| Lecture #1 | Set Theory | <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Topology/Notes/Lecture%201/Chapter%201%20-%20Set%20Theory.pdf)</kbd> |
+| Lecture #1 | Set Theory pt. 1 | <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Topology/Notes/Lecture%201/Chapter%201%20-%20Set%20Theory.pdf)</kbd> |
+| Lecture #2 | Set Theory pt. 2 | <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Topology/Notes/Lecture%201/Chapter%201%20-%20Set%20Theory.pdf)</kbd> |
 
 ## Problem Sets:
 | Problem Set | Date | Documents |
