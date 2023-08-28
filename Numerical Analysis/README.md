@@ -10,10 +10,15 @@ Solution of linear equations, roots of polynomial equations, interpolation and a
 | ------- | ---- | --------- |
 | Lecture #1 | 08/21/23 | <kbd>[PDF]()</kbd> |
 
-## Problem Sets:
-| Problem Set | Date | Documents | Exercise Code | 
-| -------- | ---- | ---------- | ---------------- |
-| Problem Set #1 |  | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> | <kbd>[Matlab]()</kbd>
+## Problem Sets (Written):
+| Problem Set | Date | Documents |
+| -------- | ---- | ---------- |
+| Problem Set #1 | 09/01/23 | <kbd>[LaTeX]()</kbd> <kbd>[PDF]()</kbd> |
+
+## Problem Sets (Programming):
+| Problem Set | Date | Exercise Code |
+| -------- | ---- | ---------- |
+| Problem Set #1 | 09/TBD/23 | <kbd>[Matlab]()</kbd> |
 
 ## Exams:
 | Exam | Date | Documents |
