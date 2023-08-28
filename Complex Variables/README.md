@@ -10,7 +10,7 @@ Geometry and algebra of complex numbers, functions of a complex variable, power 
 | ------- | --------------- | ---- | --------- |
 | Lecture #1 | 1.1 - 1.5 | 08/21/23 | <kbd>[PDF]()</kbd> |
 | Lecture #2 | 1.6 - 1.8 | 08/23/23 | <kbd>[PDF]()</kbd> |
-| Lecture #3 | 1.9 - 1.10 | 08/28/23 | <kbd>[PDF]()</kbd> | 
+| Lecture #3 | 1.9 - 1.10, and 2.13 | 08/28/23 | <kbd>[PDF]()</kbd> | 
 
 ## Problem Sets:
 | Problem Set | Date | Documents |
