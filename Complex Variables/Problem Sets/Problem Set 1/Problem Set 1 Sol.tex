@@ -1,0 +1,96 @@
+\documentclass{report}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{decorations, decorations.markings} 
+\tikzset{corner/.style={
+  postaction={decorate},
+  decoration={markings,mark=between positions 0 and 1 step 0.2 with {\fill (0,0) circle (2pt);}}
+  }
+}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 3379}\\Homework 1}
+\author{\huge{Hunter Matthews}}
+\date{08/29/23}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+% -- Question #1 --
+\qs{}{For the complex numbers $z = 2+3i$ and $w = 4-5i$ find\\
+(a) $zw$\\
+(b) $\frac{z}{w}$\\
+(c) $(\overline{zw})$\\
+(d) $\overline{zw}$\\
+(e) $z\Bar{z}$\\
+(f) $|z|^2$
+}
+\pf{Solution}{
+\textbf{(a)} We have that $$zw=(2+3i)\cdot(4-5i)=23+2i$$
+\textbf{(b)} We have that $$\frac{z}{w}=\frac{z}{w}\cdot \frac{\Bar{w}}{\Bar{w}} = \frac{2+3i}{4-5i}\cdot \frac{4+5i}{4+5i}=(-\frac{7}{41})+(\frac{22}{41})i$$
+\textbf{(c)} We have that $$(\overline{zw})=\Bar{z}\cdot\Bar{w}=(2-3i\cdot 4+5i) = 23-2i$$
+\textbf{(d)} We have that $$\overline{zw}=\Bar{z}\cdot\Bar{w}=(2-3i)\cdot(4+5i) = 23-2i$$
+\textbf{(e)} We have that $$z\Bar{z} = (2+3i)\cdot (2-3i)= 13$$
+\textbf{(f)} We have that $$|z|^2 = |2+3i|^2 = 13$$
+}
+\newpage
+% -- Question #2 --
+\qs{}{Ohm's law for electric circuit says, the voltage V (measured in volts) is the product of current I (measured in amps) and the impedance Z (ohms); i.e. $V = IZ$
+\\(a) If the current $I = 24-5i$ amps and impedance $Z=4-2i$ ohms find the voltage V.\\
+\\(b) If the voltage $V = 24-5i$ volts and impedance $Z = 4-2i$ ohms, find the current I.}
+\pf{Solution}{\textbf{(a)} Finding the voltage, we have $$V = (24-5i)\cdot (4-2i)= 86-68i$$
+\textbf{(b)} Finding the current, we have $$24-5i=(x+yi)\cdot 4-2i = \frac{53}{10}+\frac{7}{5}i$$}
+\newpage
+% -- Question #3 --
+\qs{}{The combined electrical complex impedance Z of two parallel complex impedance $Z_1$ and $Z_2$ is given by $$\frac{1}{Z} = \frac{1}{Z_1}+\frac{1}{z_2}$$ if $Z_1=3+4i$ and $Z_2=7-5i$, find $Z$.}
+\pf{Solution}{To find $Z$, we have that
+\begin{equation*}
+\begin{split}
+\frac{1}{Z} & = \frac{1}{Z_1}+\frac{1}{Z_2}\\
+& = \frac{1}{3+4i}+\frac{1}{7-5i}\\
+& = \frac{397}{101}+\frac{171}{101}i
+\end{split}
+\end{equation*}
+Hence, we have found that $Z = \frac{397}{101}+\frac{171}{101}i$.
+}
+\newpage
+% -- Question #4 --
+\qs{}{Sketch the following regions in complex plane.\\
+(a) $|z-1+i|\leq 3$\\
+(b) $z = x+iy: x\geq 1, y\leq 2$}
+\pf{Solution}{
+\textbf{(a)} The set $A = \{z\in \bbC: |z-1+i|\leq 3\}$ is the closed disk of radius 3 centered at the point $z_0=1-i$.\\
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{3a.jpg}
+\\\\\textbf{(b)} We have that the region defined by $x\geq 1$ and $y\leq 2$ in the complex plane corresponds to the set of complex numbers where the real part $x\geq 1$, and the imaginary part $y\leq 2$.\\
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{3b.jpg}
+}
+\newpage
+% -- Question #5 --
+\qs{}{Prove the following\\
+(a) A complex number $z$ is real if and only if $z=\Bar{z}$\\
+(b) A complex number $z$ is pure imaginary if and only if $z = -\Bar{z}$}
+\pf{Proof}{\textbf{(a)} Let $z=x+iy$ such that $x,y\in \bbR$. Then, we have that $$z=\Bar{z}\Longleftrightarrow x+iy=x-iy\Longleftrightarrow \left\{
+\begin{array}{ccl}x=x\\y=-y\end{array}\right.\Longleftrightarrow y =0\Longleftrightarrow z=x$$ Hence, a complex number $z$ is real if and only if $z=\Bar{z}$.\\
+\\\textbf{(b)} Let $z=x+iy$ such that $x,y\in \bbR$. Then, we have that $$z=-\Bar{z}\Longleftrightarrow x+iy=-(x-iy)\Longleftrightarrow \left\{
+\begin{array}{ccl}x=-x\\y=y\end{array}\right.\Longleftrightarrow x=0\Longleftrightarrow z = y$$ Hence, a complex number $z$ is pure imaginary if and only if $z = -\Bar{z}$.}
+\newpage
+% -- Question #6 --
+\qs{}{Compute $(1+\sqrt{3}i)^6$}
+\pf{Solution}{We have that
+$$(1+\sqrt{3}i)^6 = \sqrt{1^2+(\sqrt{3})^2} = 2$$ and now the argument is $$\tan^{-1}(\frac{\sqrt{3}}{1})=\frac{\pi}{3}$$ taken to polar form we have $2[\cos(\frac{\pi}{3}+i\sin(\frac{\pi}{3})]$ so $(1+\sqrt{3}i)^6\to 2[\cos(\frac{\pi}{3}+i\sin(\frac{\pi}{3})]^6$. Computing, we have
+\begin{equation*}
+\begin{split}
+2[\cos(\frac{\pi}{3}+i\sin(\frac{\pi}{3})]^6 & = 2^{6}(\cos(\frac{6\pi}{3})+i\sin(\frac{6\pi}{3}))\\
+& = 64(\cos 2\pi+i\sin 2\pi)\\
+& = 64(1+0)\\
+& = 64
+\end{split}
+\end{equation*}
+Hence, we have shown that $(1+\sqrt{3}i)^6 = 64$.
+}
+\end{document}
