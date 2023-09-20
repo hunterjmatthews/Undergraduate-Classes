@@ -17,9 +17,10 @@ Solution of linear equations, roots of polynomial equations, interpolation and a
 | Problem Set | Date | Questions | Exercise Code |
 | -------- | ---- | ---------- | --------------- |
 | Problem Set #1 | 09/06/23 | <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Numerical%20Analysis/Problem%20Sets/Programming/Programming%20Set%201/Programming%20Problem%20Set%201.pdf)</kbd> | <kbd>[Matlab](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Numerical%20Analysis/Problem%20Sets/Programming/Programming%20Set%201/problemset1.m)</kbd> |
+| Problem Set #2 | 09/20/23 | <kbd>[PDF](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Numerical%20Analysis/Problem%20Sets/Programming/Programming%20Set%202/Programming%20Problem%20Set%202.pdf)</kbd> | <kbd>[Matlab](https://github.com/hunterjmatthews/Undergraduate-Classes/blob/main/Numerical%20Analysis/Problem%20Sets/Programming/Programming%20Set%202/chw2.m)</kbd>
 
 ## Exams:
 | Exam | Date | Documents |
 | ---- | ---- | --------- |
-| Exam #1 | | <kbd>[PDF]()</kbd> |
-| Exam #2 | | <kbd>[PDF]()</kbd> |
+| Exam #1 | TBD | <kbd>[PDF]()</kbd> |
+| Exam #2 | TBD | <kbd>[PDF]()</kbd> |
