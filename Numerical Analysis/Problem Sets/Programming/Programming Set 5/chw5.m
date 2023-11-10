@@ -5,6 +5,7 @@
 % Jack Myrick
 % Vishnu Ranganath
 % Kevin Tang
+
 % Problem 1
 syms f(x);
 f(x) = 1 / (1 + x^2);
